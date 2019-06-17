@@ -1,0 +1,68 @@
+<button data-toggle="collapse" data-target="#search" class="btn  btn-block">Search</button>
+<div id="search" class="collapse">
+	<form method="get" action="/search" class="text-right ">
+		<div class="row">
+			<div class="col">
+				<label for="position">Asset Name:</label>
+			</div>
+			<div class="col">
+				<input type="text" name="position" id="position"></br>
+			</div>
+			<div class="col">
+				<label for="description">Description:</label>
+			</div>
+			<div class="col">
+				<input type="text" name="description" id="description">
+			</div>
+			<div class="col">
+				<label for="department">Department:</label>
+			</div>
+			<div class="col">
+				<select name="department" id="department" style="min-width: 100%">
+					<!-- department list here -->
+				</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<label for="manufacturer">Manufacturer:</label>
+			</div>
+			<div class="col">
+				<input type="text"name="manufacturer" id="manufacturer">
+			</div>
+			<div class="col">
+				<label for="model">Model:</label>
+			</div>
+			<div class="col">
+				<input type="text" name="model" id="model">
+			</div>
+			<div class="col">
+				<label for="category">Category:</label>
+			</div>
+			<div class="col">
+				<select name="category" style="min-width: 100%">
+					<!-- category list here -->
+				</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<label for="variable2">Tag Number:</label>
+			</div>
+			<div class="col">
+				<input type="text" name="variable2" id="variable2">
+			</div>
+			<div class="col">
+				<label for="variable4">Panel/Cabinet Number:</label>
+			</div>
+			<div class="col">
+				<input type="text" name="variable4" id="variable4">
+			</div>
+			<div class="col">
+			</div>
+			<div class="col text-center">
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</div>
+		</div>
+	</form>
+</div>

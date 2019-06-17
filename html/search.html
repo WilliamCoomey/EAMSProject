@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Search</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/bootstrap.css">
+		<script src="/bootstrap.js"></script>
+		<script src="/jQuery.js"></script>
+		<script src="/poppers.js"></script>
+	</head>
+	<body style="background-color: #f9f9f9">
+		<div class="container">
+			<h2>Search:</h2>
+			<form method="get" action="/search">
+				<div class="row"style="padding:10px">
+					<div class="col">
+						Asset Name:<br/>
+					</div>
+					<div class="col">
+						<input type="text" name="position" id="position" class="form-control">
+					</div>
+				</div>
+				<div class="row"style="padding:10px">
+					<div class="col">
+						Description:<br/>
+					</div>
+					<div class="col">
+						<input type="text" name="description" id="description" class="form-control">
+					</div>
+				</div>
+				<div class="row"style="padding:10px">
+					<div class="col">
+						Manufacturer:<br/>
+					</div>
+					<div class="col">
+						<input type="text" name="manufacturer" id="manufacturer" class="form-control">
+					</div>
+				</div>
+				<div class="row"style="padding:10px">
+					<div class="col">
+						Model:<br/>
+					</div>
+					<div class="col">
+						<input type="text" name="model" id="model" class="form-control">
+					</div>
+				</div>
+				<div class="row" style="padding:10px">
+					<div class="col">
+						Tag number:<br/>				
+					</div>
+					<div class="col">
+						<input type="text" name="variable2" id="variable2" class="form-control">
+					</div>
+				</div>
+				<div class="row"style="padding:10px">
+					<div class="col">
+						Panel/Cabinet number:<br/>
+					</div>
+					<div class="col">
+						<input type="text" name="variable4" id="variable4" class="form-control">
+					</div>
+				</div>
+				<div class="row"style="padding:10px">
+					<div class="col">
+						Department:<br/>
+					</div>
+					<div class="col">
+						<select name="department" class="form-control">
+							<!-- department list here -->
+						</select>
+					</div>
+				</div>
+				<div class="row"style="padding:10px">
+					<div class="col">
+						Category:<br/>
+					</div>
+					<div class="col">
+						<select name="category" class="form-control">
+							<!-- category list here -->
+						</select>
+					</div>
+				</div>
+				<div class="row"style="padding:10px">
+					<div class="col">
+						<br/>
+					</div>
+					<div class="col">
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

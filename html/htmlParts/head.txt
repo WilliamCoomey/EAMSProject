@@ -1,0 +1,59 @@
+<title>EAMS Table</title> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/bootstrap.css">
+<script src="/jQuery.js"></script>
+<script src="/popper.js"></script>
+<script src="/bootstrap.js"></script>
+<style>
+	.count 
+	{
+		position: fixed;
+		background-color: #DDDDDD;
+		padding: 5px;
+		border-radius: 0px 0px 5px 0px;
+	}
+	table, th, td
+	{
+		border: 1px solid black;
+		padding: 5px;
+	}
+</style>
+<script>
+	function printTable()
+	{
+		console.log("Printing table...");
+		
+		var head = document.getElementById("head").innerHTML;
+		var table  = document.getElementById("table").innerHTML;
+		var oldPage = document.body.innerHTML;
+		console.log(table);
+		document.body.innerHTML = "<html><head>"+head+"</head><body><table>" + table + "</table></body></html>";
+		//document.body.innerHTML = "<html>"+head+"<body>" + table + "</body></html>";
+		window.print();
+		
+		document.body.innerHTML = oldPage;
+	}
+	
+	function filter()
+	{
+		console.log("Filtering...");
+		
+		var currentPage = window.location.href;
+		var form = document.getElementById("filterForm");
+		var hiddenField = document.createElement("input");
+		
+		console.log(currentPage);
+		
+		form.setAttribute("method", "POST"); 
+		form.setAttribute("action", "/filter");
+		
+		hiddenField.setAttribute("type", "hidden");
+		hiddenField.setAttribute("name", "loadedTable");
+		hiddenField.setAttribute("value", currentPage);
+		
+		form.appendChild(hiddenField);
+		
+		form.submit();
+	}
+</script>

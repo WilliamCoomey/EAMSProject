@@ -1,0 +1,80 @@
+<button data-toggle="collapse" data-target="#filter" class="btn  btn-block">Filter</button>
+<div id="filter" class="collapse">
+	<form method="get" action="/filter" id="filterForm" class="text-right">
+		<div class="row">
+			<div class="col">
+				<div class="form-group">
+					<label for="position">Position:</label>
+					<input type="text" name="position" id="position"></br>
+				</div>
+			</div>
+			<div class="col">
+				<div class="form-group">
+					<label for="description">Description:</label>
+					<input type="text" name="description" id="description"></br>
+				</div>
+			</div>
+			<div class="col">
+				<div class="form-group">
+					<label for="organization">Organization:</label>
+					<input type="text" name="organization" id="organization">
+				</div>
+			</div>
+			<div class="col">
+				<div class="form-group">
+					<label for="department">Department:</label>
+					<input type="text" name="department" id="department">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<div class="form-group">
+					<label for="class">Class:</label>
+					<input type="text" name="class" id="class">
+				</div>
+			</div>
+			<div class="col">
+				<div class="form-group">
+					<label for="category">Category:</label>
+					<input type="text" name="category" id="category">
+				</div>
+			</div>
+			<div class="col">
+				<div class="manufacturer">
+					<label for="manufacturer">Manufacturer:</label>
+					<input type="text" name="manufacturer" id="manufacturer">
+				</div>
+			</div>
+			<div class="col">
+				<div class="model">
+					<label for="model">Model:</label>
+					<input type="text" name="model" id="model">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<div class="location">
+					<label for="location">Location:</label>
+					<input type="text" name="location" id="location">
+				</div>
+			</div>
+			<div class="col">
+				<div class="variable2">
+					<label for="variable2">Variable 2:</label>
+					<input type="text" name="variable2" id="variable2">
+				</div>
+			</div>
+			<div class="col">
+				<div class="variable4">
+					<label for="variable4">Variable 4:</label>
+					<input type="text" name="variable4" id="variable4">
+				</div>
+			</div>
+			<div class="col text-center">
+				<button type="button" onclick="filter()" class="btn btn-primary">Submit</button>
+			</div>
+		</div>
+	</form>
+</div>
